@@ -6,7 +6,8 @@ do
 	sudo adduser $NAME
 	home="/home/$NAME"
 	sudo mkdir /home/$NAME/.ssh
-	sudo cp /home/ubuntu/publickey.txt /home/$NAME/.ssh/authorized_keys
+	sudo cp /home/ubuntu/public_key /home/$NAME/.ssh/authorized_keys
+	sudo cp /home/ubuntu/private_key /home/$NAME/.ssh/authorized_keys
 done
 }
 
